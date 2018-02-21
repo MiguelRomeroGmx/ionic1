@@ -26,5 +26,35 @@ export class HomePage {
 
   }
 
+  alertaBasica2(){
+    let miAlerta2 = this.alerta.create({
+      title:'Login',
+      message:'Mensaje de la alerta',
+      inputs: [
+        {
+          name: 'Nombre',
+          placeholder: 'Nombre'
+        },
+      ],
+     buttons: [
+        {
+          text: 'Cancelar',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Guardar',
+          handler: data => {
+            console.log('Saved clicked');
+          }
+        }
+      ]
+    });
+    miAlerta2.present();
+
+  }
+
+
 }
 
