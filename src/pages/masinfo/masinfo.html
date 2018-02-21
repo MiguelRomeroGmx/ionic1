@@ -7,12 +7,13 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>masinfo</ion-title>
+    <ion-title>{{ item.title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam earum cupiditate. Vitae deleniti voluptatem nisi! Blanditiis mollitia ea iusto aliquid vel nihil exercitationem, quis assumenda cumque error fugiat. Quisquam?</p>
+<ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
+{{ item.description }}
 </ion-content>
