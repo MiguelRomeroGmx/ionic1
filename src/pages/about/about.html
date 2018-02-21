@@ -7,6 +7,20 @@
 </ion-header>
 
 <ion-content padding>
-<h2>Pagina Nosotros</h2>
-<button ion-button>Boton</button>
+<ion-card>
+  <ion-card-header>
+    Primera Lista
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of lista">
+      <ion-icon name="cart" item-start [ngStyle]="{'color': item.color}"></ion-icon>
+      {{ item.titulo }}
+    </button>
+
+
+
+  </ion-list>
+</ion-card>
+
 </ion-content>
